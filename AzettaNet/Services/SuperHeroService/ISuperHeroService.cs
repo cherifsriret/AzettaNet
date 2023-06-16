@@ -4,10 +4,10 @@ namespace AzettaNet.Services.SuperHeroService
 {
     public interface ISuperHeroService
     {
-        List<SuperHero > GetAllHeroes();
-        SuperHero? GetSingleHero(int i);
-        List<SuperHero> AddHero(SuperHero hero);
-        List<SuperHero>? UpdateHero(int i ,SuperHero hero);
-        List<SuperHero>? DeleteHero(int i);
+        Task<List<SuperHero >> GetAllHeroes();
+        Task<SuperHero?> GetSingleHero(int i);
+        Task<List<SuperHero>> AddHero(SuperHero hero);
+        Task<List<SuperHero>?> UpdateHero(int i ,SuperHero hero);
+        Task<List<SuperHero>?> DeleteHero(int i);
     }
 }
